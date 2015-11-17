@@ -2,7 +2,7 @@
 
 var React = require('react');
 
-var AuthorList = React.createClass({
+var AuthorPage = React.createClass({
 	render: function() {
 		var createAuthorRow = function(author) {
 			return (
@@ -29,4 +29,4 @@ var AuthorList = React.createClass({
 	}
 });
 
-module.exports = AuthorList;
+module.exports = AuthorPage;

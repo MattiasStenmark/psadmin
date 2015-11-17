@@ -29,6 +29,7 @@ build/Release
 node_modules
 *.sublime-workspace
 web/app/build
+dist
 
 # Users Environment Variables
 .lock-wscript
