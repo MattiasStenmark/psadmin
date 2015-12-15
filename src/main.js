@@ -4,7 +4,12 @@ var React = require('react');
 var Router = require('react-router');
 var routes = require('./routes');
 
+// Hash Urls
 Router.run(routes, function(Handler){
 	React.render(<Handler />, document.getElementById('app'));
 });
 
+// History Url
+//Router.run(routes, Router.HistoryLocation, function(Handler){
+//	React.render(<Handler />, document.getElementById('app'));
+//});
