@@ -12,6 +12,9 @@ var Input = React.createClass({
 		error: React.PropTypes.string
 	},
 
+
+	//ref is not working by some strange reason: 
+	//ref={this.props.name}
 	render: function() {
 		var wrapperClass = 'form-group';
 		if (this.props.error && this.props.error.length < 0) {
@@ -26,8 +29,7 @@ var Input = React.createClass({
 						name={this.props.name}
 						className="form-control"
 						placeholder={this.props.placeholder}
-						ref={this.props.name}
-						value={this.props.value}
+						value={this.props.value} 
 						onChange={this.props.onChange} />
 					<div className="input">{this.props.error}</div>
 				</div>
